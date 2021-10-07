@@ -1,7 +1,7 @@
 import inspect
 import typing
 
-import discord
+import nextcord as discord
 
 from .error import IncorrectFormat, IncorrectGuildIDType
 from .model import CogBaseCommandObject, CogComponentCallbackObject, CogSubcommandObject

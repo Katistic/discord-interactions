@@ -2,7 +2,7 @@ import logging
 import typing
 import uuid
 
-import discord
+import nextcord as discord
 
 from ..context import ComponentContext
 from ..error import IncorrectFormat, IncorrectType

@@ -3,9 +3,9 @@ import typing
 from typing import TYPE_CHECKING
 from warnings import warn
 
-import discord
-from discord.ext import commands
-from discord.utils import snowflake_time
+import nextcord as discord
+from nextcord.ext import commands
+from nextcord.utils import snowflake_time
 
 from . import error, http, model
 from .dpy_overrides import ComponentMessage

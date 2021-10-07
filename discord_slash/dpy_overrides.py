@@ -1,9 +1,9 @@
 import typing
 
-import discord
-from discord import AllowedMentions, File, InvalidArgument, abc, http, utils
-from discord.ext import commands
-from discord.http import Route
+import nextcord as discord
+from nextcord import AllowedMentions, File, InvalidArgument, abc, http, utils
+from nextcord.ext import commands
+from nextcord.http import Route
 
 
 class ComponentMessage(discord.Message):

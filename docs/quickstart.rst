@@ -24,7 +24,7 @@ For this example, ``main.py`` will be used.
 
 .. code-block:: python
 
-    import discord
+    import nextcord
     from discord_slash import SlashCommand # Importing the newly installed library.
 
     client = discord.Client(intents=discord.Intents.all())

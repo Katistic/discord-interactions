@@ -2,8 +2,8 @@ import json
 import typing
 
 import aiohttp
-import discord
-from discord.http import Route
+import nextcord as discord
+from nextcord.http import Route
 
 from . import error
 from .const import BASE_API

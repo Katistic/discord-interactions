@@ -5,8 +5,8 @@ from contextlib import suppress
 from enum import IntEnum
 from inspect import iscoroutinefunction
 
-import discord
-from discord.ext.commands import BucketType, CommandOnCooldown, CooldownMapping
+import nextcord as discord
+from nextcord.ext.commands import BucketType, CommandOnCooldown, CooldownMapping
 
 from . import error, http
 from .dpy_overrides import ComponentMessage

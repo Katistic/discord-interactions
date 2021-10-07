@@ -5,8 +5,8 @@ import typing
 from contextlib import suppress
 from inspect import getdoc, iscoroutinefunction
 
-import discord
-from discord.ext import commands
+import nextcord as discord
+from nextcord.ext import commands
 
 from . import context, error, http, model
 from .utils import manage_commands

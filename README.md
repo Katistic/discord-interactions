@@ -53,7 +53,7 @@ We recommend using pip in order to install our library. You are able to do this 
 This example shows a very quick and simplistic solution to implementing a slash command.
 
 ```py
-from discord import Client, Intents, Embed
+from nextcord import Client, Intents, Embed
 from discord_slash import SlashCommand, SlashContext
 
 bot = Client(intents=Intents.default())
@@ -72,8 +72,8 @@ This example serves as an alternative method for using slash commands in a cog i
 
 ```py
 # bot.py
-from discord import Intents
-from discord.ext.commands import Bot
+from nextcord import Intents
+from nextcord.ext.commands import Bot
 from discord_slash import SlashCommand
 
 # Note that command_prefix is a required but essentially unused paramater.
@@ -86,8 +86,8 @@ bot.load_extension("cog")
 bot.run("discord_token")
 
 # cog.py
-from discord import Embed
-from discord.ext.commands import Bot, Cog
+from nextcord import Embed
+from nextcord.ext.commands import Bot, Cog
 from discord_slash import cog_ext, SlashContext
 
 class Slash(Cog):
