@@ -26,7 +26,7 @@ setup(
     author_email="jwalston2002@gmail.com",
     description="A simple API wrapper for Discord interactions.",
     extras_require=extras,
-    install_requires=["discord.py", "aiohttp"],
+    install_requires=["nextcord", "aiohttp"],
     license="MIT License",
     long_description=README,
     long_description_content_type="text/markdown",
