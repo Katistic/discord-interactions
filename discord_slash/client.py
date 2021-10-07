@@ -2,6 +2,7 @@ import copy
 import logging
 import re
 import typing
+import json
 from contextlib import suppress
 from inspect import getdoc, iscoroutinefunction
 
@@ -86,7 +87,7 @@ class SlashCommand:
                 "Detected discord.Client! It is highly recommended to use `commands.Bot`. Do not add any `on_socket_response` event."
             )
 
-            self._discord.on_socket_response = self.on_socket_response
+            self._discord.on_socket_raw_receive = self.on_socket_response
             self.has_listener = False
         else:
             if not hasattr(self._discord, "slash"):
@@ -1389,6 +1390,8 @@ class SlashCommand:
 
         :param msg: Gateway message.
         """
+        msg = json.loads(msg)
+
         if msg["t"] != "INTERACTION_CREATE":
             return
 
